@@ -129,12 +129,6 @@ p, li {
   opacity: 0;
 }
 
-@media screen and (max-width: 1440px) {
-  #headline .bg div {
-    background-image: url(../img/tab_headline1.webp);
-  }
-}
-
 @media screen and (max-width: 767px) {
   #headline .bg div {
     background-image: url(../img/sp_headline1.webp);
@@ -146,12 +140,6 @@ p, li {
   z-index: 2;
 }
 
-@media screen and (max-width: 1440px) {
-  #headline .bg div:nth-child(2) {
-    background-image: url(../img/tab_headline2.webp);
-  }
-}
-
 @media screen and (max-width: 767px) {
   #headline .bg div:nth-child(2) {
     background-image: url(../img/sp_headline2.webp);
@@ -161,12 +149,6 @@ p, li {
 #headline .bg div:nth-child(3) {
   background-image: url(../img/headline3.webp);
   z-index: 1;
-}
-
-@media screen and (max-width: 1440px) {
-  #headline .bg div:nth-child(3) {
-    background-image: url(../img/tab_headline3.webp);
-  }
 }
 
 @media screen and (max-width: 767px) {
@@ -530,7 +512,7 @@ main section:last-child {
 main section .container {
   display: flex;
   align-items: center;
-  gap: 17.8rem;
+  gap: 9.6rem;
 }
 
 @media screen and (max-width: 767px) {
@@ -540,7 +522,7 @@ main section .container {
 }
 
 main section .imgBox {
-  width: 60rem;
+  width: 50%;
   height: auto;
 }
 
@@ -622,6 +604,7 @@ main #menuArea .container {
 }
 
 main #menuArea .container .imgBox {
+  width: 100%;
   margin-bottom: 4rem;
 }
 
@@ -665,15 +648,38 @@ main #menuArea .menuTable .left ul li .menu, main #menuArea .menuTable .right ul
   width: 8em;
 }
 
+main #reserveArea p {
+  margin-bottom: 4rem;
+}
+
+main #reserveArea .container {
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+@media screen and (max-width: 767px) {
+  main #reserveArea .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
 main #reserveArea .boxWrap {
   display: flex;
   flex-direction: column;
   gap: 4rem;
 }
 
+@media screen and (max-width: 767px) {
+  main #reserveArea .boxWrap {
+    width: 100%;
+  }
+}
+
 main #reserveArea .boxWrap .reserveBox {
   width: 60rem;
-  height: 10rem;
+  height: 14rem;
   border: 1px solid #333;
   display: flex;
   align-items: center;
@@ -702,11 +708,23 @@ main #reserveArea .boxWrap .reserveBox .wrap {
 main #reserveArea .boxWrap .reserveBox .wrap p {
   font-size: 3.6rem;
   font-weight: 700;
+  margin: 0;
 }
 
 main #reserveArea .boxWrap .reserveBox .wrap svg {
   width: 3.6rem;
   height: 3.6rem;
+}
+
+main #reserveArea .imgBox {
+  height: 32rem;
+  margin: 0;
+}
+
+main #reserveArea .imgBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 footer {
